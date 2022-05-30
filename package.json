@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "@mailchimp/mailchimp_transactional": "^1.0.47",
+    "dotenv": "^16.0.1"
+  }
+}
