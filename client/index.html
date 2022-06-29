@@ -7,18 +7,18 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Tiro+Tamil&display=swap"
       rel="stylesheet"
     />
     <title>Document</title>
     <!-- CSS only -->
-    <!-- <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
-      crossorigin="anonymous"
-    /> -->
-    <link rel="stylesheet" href="./style.css" />
+
+    <link rel="stylesheet" href="./styles/globals.css" />
+    <link rel="stylesheet" href="./styles/home.css" />
+    <link rel="stylesheet" href="./styles/about.css" />
+    <link rel="stylesheet" href="./styles/portfolio.css" />
+    <link rel="stylesheet" href="./styles/contact.css" />
+    <link rel="stylesheet" href="./styles/navbar.css" />
   </head>
 
   <body>
@@ -30,6 +30,9 @@
       <a href="#About" class="button2">About</a>
       <a href="#Portfolio" class="button2">Portfolio</a>
       <a href="#Contact" class="button2">Contact</a>
+      <button id="navbutton">
+        <img src="../client/images/align-justify.svg" />
+      </button>
     </nav>
 
     <section id="Home">
@@ -54,7 +57,7 @@
     </section>
 
     <section id="About">
-      <h2>About Me</h2>
+      <h2 id="aboutmetext">About Me</h2>
       <h2 id="hobbies">Hobbies/Interests</h2>
       <svg
         id="leftarrow"
@@ -66,6 +69,85 @@
       >
         <path
           d="M0.5 183.5L23.2201 187.639L15.4444 165.893L0.5 183.5ZM652.139 2.2322C664.509 33.6746 668.173 58.2587 664.834 77.4506C661.513 96.5389 651.228 110.499 635.184 120.72C619.062 130.991 597.105 137.492 570.547 141.446C544.012 145.396 513.049 146.78 479.024 146.926C445.002 147.072 407.996 145.98 369.363 144.995C330.746 144.011 290.522 143.134 250.131 143.714C169.372 144.873 87.7962 151.857 16.8425 175.533L18.1086 179.327C88.4733 155.848 169.558 148.871 250.188 147.714C290.492 147.135 330.646 148.01 369.261 148.994C407.862 149.978 444.944 151.072 479.041 150.926C513.135 150.779 544.32 149.394 571.136 145.402C597.928 141.414 620.525 134.802 637.333 124.094C654.218 113.337 665.24 98.4523 668.775 78.1362C672.292 57.9238 668.362 32.5436 655.861 0.767803L652.139 2.2322Z"
+          fill="white"
+        />
+      </svg>
+
+      <svg
+        id="toparrow"
+        width="150"
+        height="113"
+        viewBox="0 0 150 113"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M138.261 113L149.748 100.036L132.777 96.5704L138.261 113ZM5.57969 0.0133652C1.02314 5.23131 -0.489655 10.0718 1.12266 14.5722C2.67262 18.8985 6.95906 22.3892 12.6106 25.4159C23.9635 31.496 42.3428 36.4569 61.3917 42.1363C80.5718 47.8547 100.555 54.329 115.551 63.4323C130.535 72.5286 140.182 84.0169 139.462 99.7132L142.459 99.8506C143.252 82.5468 132.491 70.2065 117.108 60.8678C101.736 51.5362 81.3928 44.969 62.2488 39.2613C42.9737 33.5145 25.0314 28.6648 14.0269 22.7713C8.49964 19.8112 5.09838 16.7745 3.94688 13.5603C2.85773 10.5203 3.62972 6.80734 7.83938 1.98663L5.57969 0.0133652Z"
+          fill="white"
+        />
+      </svg>
+
+      <svg
+        id="longarrow"
+        width="71"
+        height="425"
+        viewBox="0 0 71 425"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M14.7148 424.456L29.2863 415.093L13.8917 407.155L14.7148 424.456ZM0.903827 1.68206C39.7871 71.9158 62.875 137.668 67.0466 204.212C71.2172 270.741 56.4877 338.18 19.5513 411.803L22.2328 413.148C59.366 339.133 74.2498 271.168 70.0407 204.024C65.8326 136.897 42.5477 70.7084 3.52844 0.229007L0.903827 1.68206Z"
+          fill="white"
+        />
+      </svg>
+
+      
+
+      <svg  id="smallpentagon" width="348" height="364" viewBox="0 0 348 364" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <g filter="url(#filter0_d_106_5)">
+        <path d="M70.6103 35.6963L174 2.10292L277.39 35.6963L341.288 123.645V232.355L277.39 320.304L174 353.897L70.6103 320.304L6.71194 232.355V123.645L70.6103 35.6963Z" stroke="white" stroke-width="4" shape-rendering="crispEdges"/>
+        </g>
+        <defs>
+        <filter id="filter0_d_106_5" x="0.712891" y="0" width="346.574" height="364" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+        <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+        <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+        <feOffset dy="4"/>
+        <feGaussianBlur stdDeviation="2"/>
+        <feComposite in2="hardAlpha" operator="out"/>
+        <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
+        <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_106_5"/>
+        <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_106_5" result="shape"/>
+        </filter>
+        </defs>
+        </svg>
+
+        <svg
+        id="bottomarrow"
+        width="128"
+        height="149"
+        viewBox="0 0 128 149"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M127.999 129.932L111.013 126.546L116.573 142.95L127.999 129.932ZM42.4081 0.189007C31.8206 16.6625 20.6779 36.6108 12.5005 56.4484C4.34006 76.245 -0.943392 96.1101 0.377096 112.351C1.03953 120.498 3.36998 127.808 7.9037 133.727C12.447 139.66 19.115 144.081 28.2422 146.588C46.4039 151.576 74.4459 149.026 115.666 135.696L114.743 132.842C73.6502 146.13 46.3173 148.441 29.0367 143.695C20.4428 141.334 14.3727 137.24 10.2854 131.903C6.18861 126.554 3.99599 119.841 3.36723 112.108C2.10532 96.5874 7.16695 77.259 15.2741 57.5917C23.3643 37.9656 34.4116 18.1798 44.9318 1.81099L42.4081 0.189007Z"
+          fill="white"
+        />
+      </svg>
+        
+        
+        
+
+      <svg
+        id="downarrow"
+        width="179"
+        height="417"
+        viewBox="0 0 179 417"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M12.5001 417L23.361 396.619L0.280342 397.404L12.5001 417ZM134.705 2.38185C168.665 71.5107 177.833 119.352 172.776 155.019C167.732 190.591 148.487 214.404 124.701 235.412C112.777 245.942 99.8009 255.694 86.883 265.91C74.0017 276.096 61.2308 286.705 49.9156 298.834C27.2194 323.161 10.4134 353.573 9.88932 399.004L13.8891 399.05C14.3998 354.778 30.7055 325.288 52.8404 301.562C63.9406 289.664 76.515 279.208 89.3642 269.047C102.177 258.915 115.316 249.036 127.349 238.41C151.474 217.103 171.503 192.494 176.736 155.581C181.957 118.762 172.407 70.0555 138.295 0.618149L134.705 2.38185Z"
           fill="white"
         />
       </svg>
@@ -85,11 +167,12 @@
         />
 
         <p id="introduction">
-          I am a first-year college student who is ambitious to learn and grow
-          as a developer. In my free-time I enjoy learning new ways to write
-          code, create websites, and make fun applications. In addition to this
-          Portfolio website I have also created a reactive counter game, and
-          many console applications.
+          I am a Rhode Island based entry-level software developer, currently
+          learning React, JavaScript, HTML, and CSS while building websites. Ive
+          gathered experience through self-teaching and help from peers, while
+          making several fun applications in the process. I am extremly
+          ambitious to learn and create with a team of skilled individuals while
+          gaining a lifetime of experience and knowledge.
         </p>
       </svg>
 
@@ -103,20 +186,6 @@
       >
         <path
           d="M655 299L635.061 287.348L634.94 310.441L655 299ZM0.843476 3.99362C103.001 12.0133 160.176 34.1663 196.916 62.7305C233.706 91.3331 250.208 126.462 270.901 161.392C291.584 196.304 316.282 230.599 369.395 256.432C422.398 282.211 503.524 299.481 636.903 300.904L636.945 296.905C503.812 295.484 423.373 278.237 371.145 252.835C319.028 227.487 294.832 193.938 274.343 159.353C253.864 124.786 236.919 88.7643 199.371 59.5726C161.775 30.3427 103.725 8.05781 1.15652 0.00589024L0.843476 3.99362Z"
-          fill="white"
-        />
-      </svg>
-
-      <svg
-        id="downarrow"
-        width="179"
-        height="417"
-        viewBox="0 0 179 417"
-        fill="none"
-        xmlns="http://www.w3.org/2000/svg"
-      >
-        <path
-          d="M12.5001 417L23.361 396.619L0.280342 397.404L12.5001 417ZM134.705 2.38185C168.665 71.5107 177.833 119.352 172.776 155.019C167.732 190.591 148.487 214.404 124.701 235.412C112.777 245.942 99.8009 255.694 86.883 265.91C74.0017 276.096 61.2308 286.705 49.9156 298.834C27.2194 323.161 10.4134 353.573 9.88932 399.004L13.8891 399.05C14.3998 354.778 30.7055 325.288 52.8404 301.562C63.9406 289.664 76.515 279.208 89.3642 269.047C102.177 258.915 115.316 249.036 127.349 238.41C151.474 217.103 171.503 192.494 176.736 155.581C181.957 118.762 172.407 70.0555 138.295 0.618149L134.705 2.38185Z"
           fill="white"
         />
       </svg>
@@ -209,7 +278,10 @@
           />
         </svg>
 
-        <a href="https://gabekouki.github.io/GabesCounter/" target="_blank" rel="noopener"
+        <a
+          href="https://gabekouki.github.io/GabesCounter/"
+          target="_blank"
+          rel="noopener"
           ><img class="pic" src="./images/counterwebsite.png"
         /></a>
         <a><img class="pic" src="./images/COMING-SOON.jpg" /></a>
@@ -258,20 +330,44 @@
           </form>
         </div>
         <div class="socials">
-          <a class="logobuttons" href="instagram.com" target="_blank" rel="noopener">
-            <img class="logos" src="images/instagram.svg" alt="" /> @
+          <a
+            class="logobuttons"
+            href="https://www.instagram.com/gabrielkouki.dev/"
+            target="_blank"
+            rel="noopener"
+          >
+            <img class="logos" src="images/instagram.svg" alt="" />
+            @GabrielKouki.dev
           </a>
-          <a class="logobuttons" href="https://github.com/GabeKouki" target="_blank" rel="noopener">
-            <img class="logos" src="images/github.svg" alt="" />
+          <a
+            class="logobuttons"
+            href="https://github.com/GabeKouki"
+            target="_blank"
+            rel="noopener"
+          >
+            <img class="logos" src="images/github.svg" alt="" />/GabeKouki
           </a>
-          <a class="logobuttons" href="https://www.linkedin.com/in/gabrielkouki/" target="_blank" rel="noopener">
-            <img class="logos" src="images/linkedin.svg" alt="" />
+          <a
+            class="logobuttons"
+            href="https://www.linkedin.com/in/gabrielkouki/"
+            target="_blank"
+            rel="noopener"
+          >
+            <img
+              class="logos"
+              src="images/linkedin.svg"
+              alt=""
+            />/in/gabrielkouki
           </a>
           <a class="logobuttons" href="mailto:contact@gabrielkouki.com">
-            <img class="logos" src="images/mail.svg" alt="" />
+            <img
+              class="logos"
+              src="images/mail.svg"
+              alt=""
+            />contact@gabrielkouki.com
           </a>
           <a class="logobuttons" href="tel:+14012632509">
-            <img class="logos" src="images/phone.svg" alt="" />
+            <img class="logos" src="images/phone.svg" alt="" />(401)-263-2509
           </a>
         </div>
       </div>

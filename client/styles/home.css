@@ -1,0 +1,79 @@
+#Home {
+  height: 840px;
+  width: 100%;
+}
+
+.button3 {
+  font-family: 'Tiro Tamil', serif;
+  text-decoration: none;
+  box-sizing: border-box;
+  height: 45px;
+  text-align: center;
+  text-transform: uppercase;
+  position: absolute;
+  letter-spacing: 1px;
+  color: white;
+  border: 2px solid white;
+  padding: 10px 10px;
+  margin-left: 10px;
+}
+
+.button3:hover,
+.button3:focus {
+  color: black;
+  background: white;
+}
+
+#undername {
+  font-family: 'Tiro Tamil', serif;
+  color: white;
+  font-size: 30px;
+  position: absolute;
+  margin: 0px;
+  bottom: 2px;
+  margin-left: 10px;
+}
+
+#background-video {
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: -1;
+  filter: blur(4px);
+}
+
+header {
+  position: absolute;
+  left: 33.333%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  padding: 0 32px;
+}
+
+@media all and (max-width: 500px) {
+
+  #background-video {
+    width: 110vw;
+    object-fit: cover;
+    position: absolute;
+    left: 0px;
+    top: 0;
+    z-index: -1;
+    filter: blur(4px);
+  }
+
+  #undername {
+    width: 300px;
+    font-size: 20px;
+    top: 0px;
+    position: relative;
+  }
+
+  header {
+    left: 170px;
+    position: absolute;
+  }
+}

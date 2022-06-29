@@ -1,0 +1,283 @@
+#About {
+    height: 1060px;
+    width: 100%;
+    background-color: #69696969;
+  }
+
+  #hobbies {
+    margin-left: 350px;
+  }
+
+
+  #pentagon {
+    top: 100px;
+    left: 30px;
+    position: relative;
+    animation-name: spin;
+    animation-duration: 40000ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear; 
+    transform-origin: center;
+  }
+  
+  @keyframes spin {
+    from {
+        transform:rotate(0deg);
+    }
+    to {
+        transform:rotate(360deg);
+    }
+  }
+
+  #introduction {
+    max-width: 400px;
+    left: 110px;
+    bottom: 370px;
+    font-family: 'Playfair Display', serif;
+    text-align: center;
+    font-size: 25px;
+    position: relative;
+  }
+
+  #downarrow {
+    position: absolute;
+    left: 1570px;
+    margin-top: 100px;
+  }
+
+  #leftarrow {
+    position: absolute;
+    top: 1100px;
+    left: 630px;
+  }
+  
+  
+  #rightarrow {
+    position: absolute;
+    top: 1500px;
+    left: 620px;
+  }
+  
+
+  /* carousel */
+
+  .carousel {
+    position: absolute;
+    text-align: center;
+    margin: 0 auto;
+    top: 1500px;
+    left: 1300px;
+    height: 26vw;
+    width: 26vw;
+  }
+  
+  .carousel_image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .carousel_track-container {
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .carousel_track {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    position: relative;
+    height: 100%;
+    transition: transform 250ms ease-in;
+  }
+  
+  .carousel_slide {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+  }
+  
+  .carousel_button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: transparent;
+    border: 0;
+    cursor: pointer;
+  }
+  
+  .carousel_button--left {
+    left: -30px;
+  }
+  
+  .carousel_button--right {
+    right: -30px;
+  }
+  
+  .carousel_button img {
+    width: 25px;
+  }
+  
+  .carousel_nav {
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+  }
+  
+  .carousel_indicator {
+    border: 0;
+    border-radius: 50%;
+    width: 15px;
+    height: 15px;
+    background: rgba(0, 0, 0, 0.4);
+    margin: 0 12px;
+    cursor: pointer;
+  }
+  
+  .carousel_indicator.current-slide {
+    background: rgba(0, 0, 0, 0.75);
+  }
+  
+  .is-hidden {
+    display: none;
+  }
+  
+  .carousel_text {
+      text-align: center;
+      color: white;
+      font-family: 'Playfair Display', serif;
+      border: 2px solid white;
+      padding: 2px 2px;
+  }
+  
+  .undertext {
+    display: grid;
+    grid-template: 1fr/1fr 1fr;
+  }
+
+  #toparrow {
+    display: none;
+  }
+
+  #longarrow {
+    display: none;
+  }
+
+  #bottomarrow {
+    display: none;
+  }
+
+  #smallpentagon {
+    display: none;
+  }
+
+  @media all and (max-width: 500px) {
+
+    #About {
+      margin-top: 50px;
+    }
+    #downarrow {
+      display: none;
+    }
+
+    #leftarrow {
+      display: none;
+    }
+
+    #rightarrow {
+      display: none;
+    }
+
+    #pentagon {
+      display: none;
+    }
+
+    #aboutmetext {
+      position: relative;
+      display: block;
+      left: 15px;
+      margin: 0;
+      top: 40px;
+      font-size: 25px;
+    }
+
+    #toparrow {
+      display: flex;
+      position: relative;
+      left: 50px;
+      top: 50px;
+    }
+
+    #smallpentagon {
+      display: flex;
+      position: relative;
+      top: 60px;
+      left: 5px;
+      animation-name: spin;
+      animation-duration: 40000ms;
+      animation-iteration-count: infinite;
+      animation-timing-function: linear; 
+      transform-origin: center;
+    }
+
+    #longarrow {
+      display: flex;
+      position: absolute;
+      left: 310px;
+      margin-top: 30px;
+    }
+
+    #hobbies {
+      position: absolute;
+      display: flex;
+      left: 185px;
+      right: 0px;
+      top: 950px;
+      margin-left: 0px;
+      font-size: 25px;
+    }
+
+    #introduction {
+      display: flex;
+      position: absolute;
+      font-size: 18px;
+      width: 270px;
+      top: 1160px;
+      left: 55px;
+    }
+
+    #bottomarrow {
+      display: flex;
+      position: relative;
+      top: 50px;
+      left: 50px;
+    }
+    
+    .carousel {
+      display: flex;
+      position: absolute;
+      margin: 0 auto;
+      height: 10vw;
+      width: 10vw;
+      left: 250px;
+      top: 1700px;
+    }
+
+
+
+
+
+
+
+    p {
+      display: none;
+    }
+
+    h2 {
+      display: none;
+      
+    }
+
+  }

@@ -1,0 +1,96 @@
+html,
+body {
+  width: 99vw;
+  overflow-x: hidden;
+}
+
+body {
+  background-color: #696969;
+}
+
+h1 {
+  font-family: 'Tiro Tamil', serif;
+  font-size: 120px;
+  color: white;
+  margin: 0 auto;
+}
+
+h2 {
+  font-family: 'Tiro Tamil', serif;
+  color: white;
+  position: absolute;
+  font-size: 35px;
+  top: 1000px;
+  left: 1200px;
+}
+
+h3 {
+  color: black;
+  margin-top: 50px;
+}
+
+h4 {
+  color: black;
+  font-family: 'Tiro Tamil', serif;
+  text-align: left;
+  font-size: 30px;
+}
+
+p {
+  color: white;
+  z-index: 6;
+}
+
+form {
+  background: white;
+  display: flex;
+  flex-direction: column;
+  padding: 2vw 4vw;
+  width: 90%;
+  max-width: 600px;
+  border-radius: 10px;
+}
+
+form h3 {
+  color: #555;
+  font-weight: 800;
+  margin-bottom: 20px;
+}
+
+form input,
+form textarea {
+  border: 0;
+  margin: 10px 0;
+  padding: 20px;
+  outline: none;
+  background: #f5f5f5;
+  font-size: 16px;
+}
+
+form button {
+  padding: 15px;
+  background: #ff5361;
+  color: white;
+  font-size: 18px;
+  border: 0;
+  outline: none;
+  cursor: pointer;
+  width: 150px;
+  margin: 20px auto 0;
+  border-radius: 30px;
+}
+
+@media screen and (max-width: 500px) {
+
+  html, body {
+    width: 200%;
+  }
+
+  h1 {
+    font-size: 70px;
+  }
+
+
+  
+
+}

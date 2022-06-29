@@ -1,0 +1,101 @@
+.button2 {
+  font-family: 'Tiro Tamil', serif;
+  text-decoration: none;
+  height: 40px;
+  text-align: center;
+  text-transform: uppercase;
+  display: flex;
+  letter-spacing: 1px;
+  color: white;
+  padding: 10px 10px;
+  position: relative;
+  justify-content: center;
+  box-sizing: border-box;
+}
+
+.button2:hover,
+.button2:focus {
+  color: black;
+  background: white;
+  display: flex;
+  text-align: center;
+}
+
+nav {
+  margin-top: 50px;
+  display: flex;
+  text-align: center;
+  justify-content: right;
+  align-items: center;
+  position: relative;
+  height: 9vh;
+  width: 98%;
+  z-index: 9999;
+}
+
+.headerfixed {
+  z-index: 99999;
+  backdrop-filter: blur(20px) saturate(180%);
+  display: flex;
+  text-align: center;
+  justify-content: right;
+  align-items: center;
+  position: sticky;
+  top: 0px;
+  height: 9vh;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.3);
+}
+
+.image {
+  width: 55px;
+  height: 55px;
+  border-radius: 100px;
+  position: relative;
+  top: 16px;
+  left: 56px;
+  font-size: 18px;
+}
+
+.logo {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
+
+#navbutton {
+  display: none;
+}
+
+@media (max-width: 500px) {
+  .button2 {
+    display: none;
+  }
+
+  #navbutton {
+    font-family: 'Tiro Tamil', serif;
+    text-decoration: none;
+    height: 45px;
+    text-align: center;
+    text-transform: uppercase;
+    display: flex;
+    letter-spacing: 1px;
+    color: white;
+    padding: 10px 10px;
+    position: relative;
+    justify-content: center;
+    box-sizing: border-box;
+    right: 20px;
+    border-radius: 4px;
+  }
+
+  nav {
+    position: absolute;
+  }
+
+  .image {
+    left: 20px;
+    top: 16px;
+
+  }
+}
