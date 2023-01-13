@@ -48,15 +48,9 @@ ${message}
 
 server.listen(port, function (error) {
   if (error) {
-    console.log('you done fucked up', error)
+    console.log('you done messed up', error)
   } else {
     console.log('server is listening on port ' + port)
   }
 })
 
-// how to get fired from your job
-// 1. have a small peepee
-// 2. git push origin master
-
-// my cock 8==============D
-// gabes cock 8D
